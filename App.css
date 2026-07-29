@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html, #root {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #1e1e1e;
+  color: #fff;
+}
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #252526;
+  border-bottom: 1px solid #333;
+}
+
+.controls select, .controls button {
+  padding: 8px 16px;
+  font-size: 14px;
+  margin-left: 12px;
+  border-radius: 4px;
+  border: none;
+}
+
+.controls button {
+  background-color: #0e639c;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.controls button:hover {
+  background-color: #1177bb;
+}
+
+.controls button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+.workspace {
+  display: flex;
+  flex: 1;
+}
+
+.editor-pane {
+  flex: 6;
+  border-right: 1px solid #333;
+}
+
+.io-pane {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
+  gap: 12px;
+  background-color: #1e1e1e;
+}
+
+.io-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.io-box h4 {
+  margin-bottom: 6px;
+  color: #aaa;
+}
+
+.io-box textarea {
+  flex: 1;
+  background-color: #252526;
+  color: #fff;
+  border: 1px solid #333;
+  padding: 10px;
+  font-family: monospace;
+  resize: none;
+  border-radius: 4px;
+}
+
+.output-screen {
+  flex: 1;
+  background-color: #141414;
+  color: #00ff66;
+  border: 1px solid #333;
+  padding: 10px;
+  font-family: monospace;
+  white-space: pre-wrap;
+  overflow-y: auto;
+  border-radius: 4px;
+}
